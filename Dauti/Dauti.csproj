@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B04BD2AB-CA5A-4C05-9E83-E64ECA6C4C90}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dauti</RootNamespace>
+    <AssemblyName>Dauti</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.0.0\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.1\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.0.0\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <Private>True</Private>
+      <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="template\config\img\1.png" />
+    <Content Include="template\config\img\10.gif" />
+    <Content Include="template\config\img\2.jpg" />
+    <Content Include="template\config\img\3.png" />
+    <Content Include="template\config\img\4.png" />
+    <Content Include="template\config\img\5.png" />
+    <Content Include="template\config\img\6.jpg" />
+    <Content Include="template\config\img\7.jpg" />
+    <Content Include="template\config\img\8.png" />
+    <Content Include="template\config\img\9.jpg" />
+    <Content Include="template\config\img\audio1-120x76.jpg" />
+    <Content Include="template\config\img\files\amadori.png" />
+    <Content Include="template\config\img\files\malizia.png" />
+    <Content Include="template\config\img\files\ovako.png" />
+    <Content Include="template\config\img\files\puter.png" />
+    <Content Include="template\config\img\ipad.png" />
+    <Content Include="template\config\img\menu\11.jpg" />
+    <Content Include="template\config\img\menu\11_2.jpg" />
+    <Content Include="template\config\img\menu\12.jpg" />
+    <Content Include="template\config\img\menu\132.html" />
+    <Content Include="template\config\img\menu\133.html" />
+    <Content Include="template\config\img\menu\134.html" />
+    <Content Include="template\config\img\menu\135.html" />
+    <Content Include="template\config\img\menu\136.html" />
+    <Content Include="template\config\img\menu\137.html" />
+    <Content Include="template\config\img\menu\138.html" />
+    <Content Include="template\config\img\menu\139.html" />
+    <Content Include="template\config\img\menu\140.html" />
+    <Content Include="template\config\img\menu\141.html" />
+    <Content Include="template\config\img\menu\34.html" />
+    <Content Include="template\config\img\menu\35.html" />
+    <Content Include="template\config\img\menu\36.html" />
+    <Content Include="template\config\img\menu\37.html" />
+    <Content Include="template\config\img\menu\38.html" />
+    <Content Include="template\config\img\menu\39.html" />
+    <Content Include="template\config\img\menu\40.html" />
+    <Content Include="template\config\img\menu\41.html" />
+    <Content Include="template\config\img\menu\95.jpg" />
+    <Content Include="template\config\img\menu\95_2.jpg" />
+    <Content Include="template\config\img\menu\96.jpg" />
+    <Content Include="template\config\img\menu\96_2.jpg" />
+    <Content Include="template\config\img\menu\97.jpg" />
+    <Content Include="template\config\img\menu\97_2.jpg" />
+    <Content Include="template\config\img\Screenshot_1.png" />
+    <Content Include="template\config\img\xhema.JPG" />
+    <Content Include="template\css\estilo.html" />
+    <Content Include="template\css\fonts.css" />
+    <Content Include="template\css\font\Aaargh-webfont.svg" />
+    <Content Include="template\css\font\neutra_display_titling-webfont.svg" />
+    <Content Include="template\css\font\OpenSans-CondBold-webfont.svg" />
+    <Content Include="template\css\font\OpenSans-CondLight-webfont.svg" />
+    <Content Include="template\css\font\OpenSans-CondLightItalic-webfont.svg" />
+    <Content Include="template\css\style.css" />
+    <Content Include="template\images\arrow1.png" />
+    <Content Include="template\images\bg.jpg" />
+    <Content Include="template\images\bg_.jpg" />
+    <Content Include="template\images\blank.gif" />
+    <Content Include="template\images\contacto.jpg" />
+    <Content Include="template\images\dautikomerc.png" />
+    <Content Include="template\images\facebook.png" />
+    <Content Include="template\images\line1.png" />
+    <Content Include="template\images\line2.png" />
+    <Content Include="template\images\logo.png" />
+    <Content Include="template\images\logo_.png" />
+    <Content Include="template\images\logo__.png" />
+    <Content Include="template\images\popsep.jpg" />
+    <Content Include="template\images\recetas\btn.png" />
+    <Content Include="template\images\recetas\ico1.html" />
+    <Content Include="template\images\recetas\ico2.html" />
+    <Content Include="template\images\recetas\ico3.html" />
+    <Content Include="template\images\recetas\ico4.html" />
+    <Content Include="template\images\recetas\img.html" />
+    <Content Include="template\images\recetas\input.png" />
+    <Content Include="template\images\recetas\textarea.png" />
+    <Content Include="template\images\recomendacion.html" />
+    <Content Include="template\images\slidenav.png" />
+    <Content Include="template\images\top2.png" />
+    <Content Include="template\images\topBg.png" />
+    <Content Include="template\images\topBg_.jpg" />
+    <Content Include="template\images\topBg_.png" />
+    <Content Include="template\images\topBuscar.jpg" />
+    <Content Include="template\images\topFb.jpg" />
+    <Content Include="template\images\topTw.jpg" />
+    <Content Include="template\images\trama1.png" />
+    <Content Include="template\images\vermas.png" />
+    <Content Include="template\images\vija.png" />
+    <Content Include="template\images\vija1.png" />
+    <Content Include="template\images\vija2.png" />
+    <Content Include="template\images\x.png" />
+    <Content Include="template\images\youtube.png" />
+    <Content Include="template\index - Copy.html" />
+    <Content Include="template\index.html" />
+    <Content Include="template\iv-admin\css\prettyPhoto.css" />
+    <Content Include="template\iv-admin\images\prettyPhoto\dark_rounded\btnNext.png" />
+    <Content Include="template\iv-admin\images\prettyPhoto\dark_rounded\btnPrevious.png" />
+    <Content Include="template\iv-admin\images\prettyPhoto\dark_rounded\contentPattern.png" />
+    <Content Include="template\iv-admin\images\prettyPhoto\dark_rounded\loader.gif" />
+    <Content Include="template\iv-admin\images\prettyPhoto\dark_rounded\sprite.png" />
+    <Content Include="template\iv-admin\images\prettyPhoto\dark_square\btnNext.png" />
+    <Content Include="template\iv-admin\images\prettyPhoto\dark_square\btnPrevious.png" />
+    <Content Include="template\iv-admin\images\prettyPhoto\dark_square\loader.gif" />
+    <Content Include="template\iv-admin\images\prettyPhoto\dark_square\sprite.png" />
+    <Content Include="template\iv-admin\images\prettyPhoto\default\default_thumb.png" />
+    <Content Include="template\iv-admin\images\prettyPhoto\default\loader.gif" />
+    <Content Include="template\iv-admin\images\prettyPhoto\default\sprite.png" />
+    <Content Include="template\iv-admin\images\prettyPhoto\default\sprite_next.png" />
+    <Content Include="template\iv-admin\images\prettyPhoto\default\sprite_prev.png" />
+    <Content Include="template\iv-admin\images\prettyPhoto\default\sprite_x.png" />
+    <Content Include="template\iv-admin\images\prettyPhoto\default\sprite_y.png" />
+    <Content Include="template\iv-admin\images\prettyPhoto\facebook\btnNext.png" />
+    <Content Include="template\iv-admin\images\prettyPhoto\facebook\btnPrevious.png" />
+    <Content Include="template\iv-admin\images\prettyPhoto\facebook\contentPatternBottom.png" />
+    <Content Include="template\iv-admin\images\prettyPhoto\facebook\contentPatternLeft.png" />
+    <Content Include="template\iv-admin\images\prettyPhoto\facebook\contentPatternRight.png" />
+    <Content Include="template\iv-admin\images\prettyPhoto\facebook\contentPatternTop.png" />
+    <Content Include="template\iv-admin\images\prettyPhoto\facebook\default_thumbnail.gif" />
+    <Content Include="template\iv-admin\images\prettyPhoto\facebook\loader.gif" />
+    <Content Include="template\iv-admin\images\prettyPhoto\facebook\sprite.png" />
+    <Content Include="template\iv-admin\images\prettyPhoto\light_rounded\btnNext.png" />
+    <Content Include="template\iv-admin\images\prettyPhoto\light_rounded\btnPrevious.png" />
+    <Content Include="template\iv-admin\images\prettyPhoto\light_rounded\loader.gif" />
+    <Content Include="template\iv-admin\images\prettyPhoto\light_rounded\sprite.png" />
+    <Content Include="template\iv-admin\images\prettyPhoto\light_square\btnNext.png" />
+    <Content Include="template\iv-admin\images\prettyPhoto\light_square\btnPrevious.png" />
+    <Content Include="template\iv-admin\images\prettyPhoto\light_square\sprite.png" />
+    <Content Include="template\iv-admin\js\jquery-1.6.1.min.js" />
+    <Content Include="template\iv-admin\js\jquery.prettyPhoto.js" />
+    <Content Include="template\js\functions.js" />
+    <Content Include="template\marcas.html" />
+    <Content Include="template\marcas7d37.html" />
+    <Content Include="template\recetasd8da.html" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Shared\_LayoutPageDauti.cshtml" />
+    <Content Include="template\css\font\Aaargh-webfont.eot" />
+    <Content Include="template\css\font\Aaargh-webfont.ttf" />
+    <Content Include="template\css\font\Aaargh-webfont.woff" />
+    <Content Include="template\css\font\Aaargh-webfontd41d.eot" />
+    <Content Include="template\css\font\neutra_display_titling-webfont.eot" />
+    <Content Include="template\css\font\neutra_display_titling-webfont.ttf" />
+    <Content Include="template\css\font\neutra_display_titling-webfont.woff" />
+    <Content Include="template\css\font\neutra_display_titling-webfontd41d.eot" />
+    <Content Include="template\css\font\OpenSans-CondBold-webfont.eot" />
+    <Content Include="template\css\font\OpenSans-CondBold-webfont.ttf" />
+    <Content Include="template\css\font\OpenSans-CondBold-webfont.woff" />
+    <Content Include="template\css\font\OpenSans-CondBold-webfontd41d.eot" />
+    <Content Include="template\css\font\OpenSans-CondLight-webfont.eot" />
+    <Content Include="template\css\font\OpenSans-CondLight-webfont.ttf" />
+    <Content Include="template\css\font\OpenSans-CondLight-webfont.woff" />
+    <Content Include="template\css\font\OpenSans-CondLight-webfontd41d.eot" />
+    <Content Include="template\css\font\OpenSans-CondLightItalic-webfont.eot" />
+    <Content Include="template\css\font\OpenSans-CondLightItalic-webfont.ttf" />
+    <Content Include="template\css\font\OpenSans-CondLightItalic-webfont.woff" />
+    <Content Include="template\css\font\OpenSans-CondLightItalic-webfontd41d.eot" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>26318</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:26318/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

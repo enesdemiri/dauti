@@ -1,0 +1,226 @@
+body{background:url(../images/bg.jpg) repeat;padding:0;margin:0;width:100%;height:100%;font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;font-size:12px;}
+table{border:none;border-spacing:0;border-collapse:collapse;margin:0;}
+tr, th, td{padding:0;vertical-align:top;}
+img{border:none;}
+a{color:#2a2978;}
+p{padding:0;margin:0;margin-bottom:20px;}
+h1{color:#2a2978;}
+
+.wbase{width:960px;margin:auto;position:relative;}
+.clear{clear:both;line-height:0;height:0;padding:0;}
+.line1{background:#004ca0;height:1px;width:1022px;margin:10px auto 40px auto;}
+
+.top{background:url(../iages/topBg.png) no-repeat center top;height:64px;background-repeat: repeat-x;background-color: #808080;}
+.top .corporativo{float:left;}
+.top .corporativo .o{float:left;display:block;color:#FFF;text-transform:uppercase;text-decoration:none;line-height:43px;font-size:11px;}
+.top .corporativo .sep{float:left;width:1px;height:10px;background:#FFF;margin:16px 10px;}
+.top .idiomas{position:absolute;left:50%;margin-left:-98px;padding:8px 0;}
+.top .idiomas a{float:left;display:block;color:#FFF;text-transform:uppercase;text-decoration:none;font-size:11px;padding:4px 8px;border:#FFF solid 1px;border-radius:5px;margin:0 4px;}
+.top .idiomas .col{background:#ea342f;}
+.top .redes{float:right;padding:10px 0;}
+.top .redes a{float:left;margin-right:4px;}
+.top .buscar{float:right;padding:10px 0;}
+.top .buscar .input{border:none;border-radius:4px 0 0 4px;float:left;background:#FFF;padding:4px 8px;width:120px;color:#666;height:14px;font:11px;display:block;margin-left:8px;outline:none;}
+.top .buscar .submit{border:none;border-radius:0 4px 4px 0;float:left;height:22px;padding:4px;background:url(../images/topBuscar.jpg) center center no-repeat #FFF;;width:22px;display:block;outline:none;}
+
+.menu{width:980px;margin:auto;position:relative;height:83px;padding:10px 0;z-index:200;font-family:'Raleway',sans-serif;}
+.menu .logo{float:left;cursor:pointer;padding-right:20px;margin-left:-30px;margin-top: -10px;}
+.menu a.o, .menu div.o{position:relative;top:50%;bottom:50%;display:block;float:left;width:auto;}
+.menu a.o, .menu div.o .t{display:block;font-size:13px;text-transform:uppercase;line-height:14px;color:#7d7d7d;text-decoration:none;text-align:center;padding:8px;width:auto;}
+.menu a.o:hover, .menu div.o .t:hover, .menu a.o.s, .menu div.o .t.s{background:#24407e;color:#FFF;}
+.menu .o .sub{display:none;position:absolute;background:#FFF;border:#999 solid 1px;}
+.menu .o .sub .o{font-size:12px;line-height:12px;padding:10px 16px;width:auto;border-bottom:1px solid #CCC;width:230px;text-align:left;}
+.menu .o .sub .o:hover{background:#EEE;color:#7d7d7d;}
+.menu .sep{position:relative;top:50%;bottom:50%;display:block;float:left;width:1px;height:20px;background:#999;padding:8px 0;margin:0 5px;}
+
+.pie{background:#eaeaea;color:#565656;font-size:13px;text-align:center;padding:30px 0 20px 0;}
+.pie .logo{width:95px;position:absolute;left:50%;margin-left:-47px;margin-top:-48px;}
+
+
+/*		PÁGINA INICIAL		*/
+.home .slide{width:1022px;height:254px;overflow:hidden;background:center top no-repeat;position:relative;z-index:0;margin:20px auto 70px auto;}
+.home .slide .img{width:100%;height:254px;background:center top no-repeat;position:absolute;display:none;z-index:0;}
+.home .slideNav{position:absolute;width:auto;left:50%;margin:-60px 0 0 0;z-index:5;}
+.home .slideNav .ant, .home .slideNav .sig, .home .slideNav .poi{background:url(../images/slidenav.png) left top no-repeat;height:26px;display:block;width:17px;float:left;margin-right:0px;}
+.home .slideNav .ant{background-position:left top;}
+.home .slideNav .sig{background-position:right top;}
+.home .slideNav .poi{background-position:-35px top;}
+.home .slideNav .poi.sel{background-position:-17px top;}
+
+.random .o{display:block;float:left;}
+.random .sep{float:left;height:126px;width:19px;}
+
+.home .marcas{width:1022px;margin:auto;margin-bottom:50px;overflow:hidden;background:rgba(1,1,1,0);}
+.home .marcas td{vertical-align:middle;}
+.home .marcas .ant, .home .marcas .sig{background:url(../images/slidenav.png) left top no-repeat;height:26px;display:block;width:17px;float:left;margin-right:0px;}
+.home .marcas .ant{background-position:left top;}
+.home .marcas .sig{background-position:right top;float:right;}
+.home .marcas .slide{width:962px;height:auto;background:none;z-index:auto;margin:0;}
+.home .marcas .slide .box{width:1500px;position:relative;}
+.home .marcas .slide .box .marca{float:left;background:#FFF;padding:7px;margin:0 10px;cursor:pointer;}
+
+
+/*		MARCAS Y PRODUCTOS		*/
+.myp{padding-top:20px;}
+.myp .sep{background:url(../images/line1.png) left top no-repeat;width:200px;height:15px;clear:both;}
+.myp .sep2{background:url(../images/line2.png) left top no-repeat;width:40px;height:570px;clear:both;}
+
+.myp .categorias{width:200px;}
+.myp .categorias a.o{display:block;float:left;font-family:'aaarghnormal';font-size:12px;text-transform:uppercase;color:#24407e;text-decoration:none;height:25px;}
+.myp .categorias div.o{display:block;float:left;font-family:'aaarghnormal';font-size:12px;text-transform:uppercase;color:#24407e;text-decoration:none;}
+.myp .categorias div.o .t{display:block;float:left;font-family:'aaarghnormal';font-size:12px;text-transform:uppercase;color:#24407e;text-decoration:none;height:25px;}
+.myp .categorias div.o .t.s{background:url(../images/arrow1.png) right 4px no-repeat;padding-right:12px;}
+.myp .categorias div.o .sub0{width:200px;display:none;clear:both;background:url(../images/line1.png) left top no-repeat;padding-top:15px;}
+.myp .categorias div.o .sub0.s{display:block;}
+.myp .categorias div.o .sub0 div.o{display:block;float:none;}
+.myp .categorias div.o .sub0 a.o, .myp .categorias div.o .sub0 .t{color:#6e6e6e;font-size:10px;padding:2px 0px;text-decoration:none;float:none;}
+.myp .categorias div.o .sub0 a.s, .myp .categorias div.o .sub0 .t.s{color:#333333;font-weight:bold;}
+.myp .categorias div.o .sub1{width:200px;display:none;clear:both;background:url(../images/line1.png) left top no-repeat;padding-top:15px;}
+.myp .categorias div.o .sub0 .o .sub1.s{display:block;}
+.myp .categorias div.o .sub1 a.o{color:#6e6e6e;font-size:10px;padding:2px 0px;text-decoration:none;float:none;padding-left:18px;}
+.myp .categorias div.o .sub1 a.s{color:#333333;font-weight:bold;}
+
+.myp .listado .titulo{margin-left:20px;}
+.myp .listado .titulo td.t{border-right:#bcbcbc 2px solid;}
+.myp .listado .titulo td.t b{color:#cb1b13;font-family:"Arial Black", Gadget, sans-serif;font-size:18px;text-transform:uppercase;}
+.myp .listado .titulo td{vertical-align:middle;padding:10px 40px;}
+
+.myp .listado .productos{background:url(../images/trama1.png) repeat;border-radius:12px;border:#bcbcbc solid 1px;margin-top:20px;padding:40px 15px;}
+.myp .listado .productos .ant, .myp .listado .productos .sig{background:url(../images/slidenav.png) left top no-repeat;height:26px;display:block;width:17px;float:left;margin-right:0px;}
+.myp .listado .productos .ant{background-position:left top;}
+.myp .listado .productos .sig{background-position:right top;float:right;}
+.myp .listado .productos .slide{width:690px;overflow:hidden;position:relative;}
+.myp .listado .productos .slide .box{position:relative;width:1500px;}
+.myp .listado .productos .slide .box a{display:block;text-decoration:none;font-family:"Arial Black", Gadget, sans-serif;font-size:18px;color:#24407e;text-align:center;width:150px;max-width:150px;float:left;margin:0 10px;line-height:18px;text-transform:uppercase;}
+
+.myp .listado .productos2{padding-top:40px;}
+.myp .listado .productos2 a{text-align:center;width:140px;margin:0px 12px;float:left;display:block;text-decoration:none;height:240px;}
+.myp .listado .productos2 a img{width:140px;height:140px;}
+.myp .listado .productos2 a .txt{clear:both;margin-top:-10px;font-family:"Arial Black", Gadget, sans-serif;font-size:14px;color:#24407e;padding:10px 10px 0 10px;height:70px;line-height:16px;}
+.myp .listado .productos2 a .vermas img{width:auto;height:20px;}
+
+.myp .marcas{width:720px;margin:auto;margin-bottom:50px;overflow:hidden;}
+.myp .marcas td{vertical-align:middle;}
+.myp .marcas .ant, .myp .marcas .sig{background:url(../images/slidenav.png) left top no-repeat;height:26px;display:block;width:17px;float:left;margin-right:0px;}
+.myp .marcas .ant{background-position:left top;}
+.myp .marcas .sig{background-position:right top;float:right;}
+.myp .marcas .slide{width:660px;overflow:hidden;position:relative;}
+.myp .marcas .slide .box{width:1500px;position:relative;}
+.myp .marcas .slide .box .marca{float:left;background:#FFF;padding:7px;margin:0 10px;cursor:pointer;}
+
+.popupbg{background:#000;left:0;top:0;width:100%;height:100%;opacity:0.8;filter:alpha(opacity=80);position:fixed;z-index:100000;}
+.popupp{display:block;left:50%;top:50%;width:760px;height:450px;margin:-255px 0 0 -410px;padding:60px;position:fixed;z-index:100001;background:#FFF;}
+.popupp .close{position:absolute;margin:0 0 0 765px;cursor:pointer;z-index:99999;}
+.popupp .img{float:left;}
+.popupp .sep{float:left;padding:0 20px;}
+.popupp .txt{float:left;padding-right:20px;color:#666;font-size:12px;}
+.popupp .txt strong, .popupp .txt b{color:#333;}
+.popupp .txt .tit{font-family:"Arial Black", Gadget, sans-serif;font-size:24px;color:#24407e;display:block;margin-bottom:20px;}
+
+.popupa{display:none;}
+
+.recetas{font-size:14px;color:#333;width:500px;}
+.recetas h2, .recetas h5{padding:0;margin:0;height:auto;font-size:24px;}
+.recetas p{padding:0;margin:0;}
+.recetas h5{font-size:18px;font-weight:normal;font-style:italic;margin-bottom:10px !important;}
+.recetas h4{line-height:29px;font-size:18px;font-family:"Arial Black", Gadget, sans-serif;color:#cb1b13;padding:0px 0 3px 8px;margin:0;height:auto;}
+.recetas h4 div{float:left;padding-right:10px;}
+.recetas select, .recetas .input{background:url(../images/recetas/input.png) left top no-repeat;width:480px;height:37px;display:block;float:none;margin:0;padding:0 10px 10px 10px;line-height:17px;border:none;outline:none;}
+.recetas textarea{background:url(../images/recetas/textarea.png) left top no-repeat;width:480px;height:100px;display:block;float:none;margin:0;padding:10px;line-height:17px;border:none;margin-bottom:20px;resize:none;outline:none;}
+.recetas select{width:500px;}
+.recetas .submit{background:url(../images/recetas/btn.png) left top no-repeat;width:102px;height:29px;text-align:center;display:block;color:#FFF;line-height:29px;font-size:14px;border:none;font-weight:bold;font-family:'aaarghnormal';cursor:pointer;}
+
+.receta{position:relative;display:block;border:#333 dashed 1px;padding:10px;text-decoration:none;background:#FCFCFC;margin-bottom:20px;line-height:14px;}
+.receta .img{float:left;border:#24407e solid 1px;width:102px;height:102px;overflow:hidden;margin-right:10px;}
+.receta .tit{font-size:18px;font-family:"Arial Black", Gadget, sans-serif;padding-bottom:12px;color:#cb1b13;line-height:18px;}
+.receta .info1{width:221px;float:left;font-size:12px;color:#666;}
+.receta .info2{width:442px;float:left;font-size:12px;color:#666;}
+.receta .info1 b{color:#24407e;font-size:14px;}
+.receta .info2 b{display:block;margin-top:8px;color:#24407e;font-size:14px;}
+
+.fmin .recetas{width:280px;font-size:12px;}
+.recetas h2, .recetas h5{padding:0;margin:0;height:auto;font-size:18px;}
+.fmin .recetas select, .recetas .input{width:260px;}
+.fmin .recetas select{width:280px;}
+
+.recetas.detalle{font-size:12px;width:580px;}
+.recetas.detalle h2{margin-bottom:20px;}
+.recetas.detalle h4{line-height:14px;font-size:14px;}
+.recetas.detalle .img{border:#cb1b13 solid 2px;width:auto;height:200px;overflow:hidden;border-radius:5px 5px 0 0;}
+.recetas.detalle .info0{background:#cb1b13;color:#FFF;font-size:14px;height:16px;line-height:16px;padding:5px 20px 7px 20px;margin-bottom:20px;border-radius:0 0 5px 5px;}
+.recetas.detalle .info0 b{display:block;float:left;padding-right:5px;}
+.recetas.detalle .info0 i{display:block;float:left;padding-right:20px;margin-right:20px;border-right:1px solid #FFF;}
+.recetas.detalle .info2 b{margin:0 0 4px 0;font-size:18px;line-height:normal;}
+
+.files, .files table{width:100%;}
+.files table td{padding:5px 10px 5px 5px !important;border:#999 solid 1px;}
+.files table .t{background:#666;color:#FFF;padding:8px 5px;}
+.files table a{background:url(../images/recetas/btn.png) left top no-repeat;width:102px;height:29px;text-align:center;display:block;color:#FFF;line-height:29px;font-size:14px;border:none;font-weight:bold;font-family:'aaarghnormal';cursor:pointer;display:block;text-decoration:none;}
+
+.intl .top .idiomas .col{background:none;}
+.intl .top .idiomas .int{background:#ea342f;}
+.intl .menu a.o, .menu div.o .t{padding:8px 27px;}
+
+.intles .top .idiomas .col{background:none;}
+.intles .top .idiomas .int{background:#ea342f;}
+.intles .menu a.o, .menu div.o .t{padding:8px 16px;}
+
+.frm h4{float:left;width:180px;font-size:14px;clear:both;}
+.frm .input{float:left;width:280px;}
+.frm select{float:left;width:290px;}
+
+
+
+.news-list img{
+	float:left;
+}
+.news-title{
+	margin-left: 10px;
+	font-size: 16px;
+	float:left;
+	text-decoration: none;
+	color:black;
+}
+.news-date{
+	margin-left: 10px;
+	float:left;
+}
+.news-right{
+	width:190px;
+	float:left;
+}
+.mainNews-title{
+	position: relative;
+	margin-top:-45px;
+	height: 45px;
+	background-color: rgba(150, 198, 239,0.5);
+	color: black;
+	text-align: center;
+	text-decoration: none;
+}
+
+#mainNews-container{
+	overflow: hidden;
+}
+
+.block-title {
+	width:1020px;
+	position: relative;
+	top: -9px;
+	text-align: center;
+	background: transparent url('../images/vija1.png') repeat-x;
+	padding-bottom: 16px;
+	font-size: 15px;
+	margin: 0px auto;
+	line-height: 22px;
+	font-family: Arimo, sans-serif;
+	font-weight: normal;
+}
+.block-title span{
+	background-color: white;
+	z-index: 1;
+	color: #918c8c !important;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
+	padding: 0px 8px 0px 8px;
+}
