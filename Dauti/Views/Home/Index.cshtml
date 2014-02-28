@@ -1,8 +1,8 @@
-﻿@{
+﻿@model List<Dauti.DataModel.ProductCategory>
+@{
     ViewBag.Title = "Home Page";
-    Layout = "../Shared/_LayoutPageDauti.cshtml";
+    Layout = "~/Views/Shared/_LayoutPageDauti.cshtml";
 }
-
 
 <div class="home content">
     <div class="slide">
@@ -18,12 +18,43 @@
         <div class='news-wrapper' style="width: 360px; height: 160px; float:left;">
             <!--******************************-->
             <div id='mainNews-container'>
-                <img src="@Url.Content("template")/config/img/xhema.jpg" width="360" />
+                <img src="../@Url.Content("template")/config/img/xhema.jpg" width="360" />
                 <div id='news-blur'>
                     <h2 class='mainNews-title'>Xhemail Dauti në trajnimin për zhvillimin e aftësive për punësim</h2>
                 </div>
             </div>
             <!--******************************-->
+        </div>
+        <div class="sep"></div>
+
+        <div class='news-wrapper' style="width: 310px; height: 200px; float:left;">
+            <!--******************************-->
+            <div class='news-list'>
+                <img src="../@Url.Content("template")/config/img/audio1-120x76.jpg">
+                <div class='news-right'>
+                    <a class='news-title' href="">The iPad for poor people has arrived..</a>
+                    <p class='news-date'>May 3, 2014</p>
+                </div>
+            </div>
+            <!--******************************-->
+            <!--******************************-->
+            <div class='news-list'>
+                <img src="../@Url.Content("template")/config/img/ipad.png">
+                <div class='news-right'>
+                    <a class='news-title' href="">The iPad for poor people has arrived..</a>
+                    <p class='news-date'>May 3, 2014</p>
+                </div>
+            </div>
+            <!--******************************-->
+            <!--******************************-->
+            <div class='news-list'>
+                <img src="../@Url.Content("template")/config/img/audio1-120x76.jpg">
+                <div class='news-right'>
+                    <a class='news-title' href="">The iPad for poor people has arrived..</a>
+                    <p class='news-date'>May 3, 2014</p>
+                </div>
+            </div>
+            <!--******************************-->
 
         </div>
         <div class="sep"></div>
@@ -31,7 +62,7 @@
         <div class='news-wrapper' style="width: 310px; height: 200px; float:left;">
             <!--******************************-->
             <div class='news-list'>
-                <img src="@Url.Content("template")/config/img/audio1-120x76.jpg">
+                <img src="../@Url.Content("template")/config/img/ipad.png">
                 <div class='news-right'>
                     <a class='news-title' href="">The iPad for poor people has arrived..</a>
                     <p class='news-date'>May 3, 2014</p>
@@ -40,7 +71,7 @@
             <!--******************************-->
             <!--******************************-->
             <div class='news-list'>
-                <img src="@Url.Content("template")/config/img/ipad.png">
+                <img src="../@Url.Content("template")/config/img/audio1-120x76.jpg">
                 <div class='news-right'>
                     <a class='news-title' href="">The iPad for poor people has arrived..</a>
                     <p class='news-date'>May 3, 2014</p>
@@ -49,39 +80,7 @@
             <!--******************************-->
             <!--******************************-->
             <div class='news-list'>
-                <img src="@Url.Content("template")/config/img/audio1-120x76.jpg">
-                <div class='news-right'>
-                    <a class='news-title' href="">The iPad for poor people has arrived..</a>
-                    <p class='news-date'>May 3, 2014</p>
-                </div>
-            </div>
-            <!--******************************-->
-
-        </div>
-        <div class="sep"></div>
-
-        <div class='news-wrapper' style="width: 310px; height: 200px; float:left;">
-            <!--******************************-->
-            <div class='news-list'>
-                <img src="@Url.Content("template")/config/img/ipad.png">
-                <div class='news-right'>
-                    <a class='news-title' href="">The iPad for poor people has arrived..</a>
-                    <p class='news-date'>May 3, 2014</p>
-                </div>
-            </div>
-            <!--******************************-->
-            <!--******************************-->
-            <div class='news-list'>
-                <img src="@Url.Content("template")/config/img/audio1-120x76.jpg">
-                <div class='news-right'>
-                    <a class='news-title' href="">The iPad for poor people has arrived..</a>
-                    <p class='news-date'>May 3, 2014</p>
-                </div>
-            </div>
-            <!--******************************-->
-            <!--******************************-->
-            <div class='news-list'>
-                <img src="@Url.Content("template")/config/img/ipad.png">
+                <img src="../@Url.Content("template")/config/img/ipad.png">
                 <div class='news-right'>
                     <a class='news-title' href="">The iPad for poor people has arrived..</a>
                     <p class='news-date'>May 3, 2014</p>
@@ -102,66 +101,66 @@
                     <div class="box">
                         <div class="gm" style="float: left;">
                             <a class="marca" target="_self" href="marcas120a.html?cat=compotas&amp;m=141&amp;t=1">
-                                <img src="@Url.Content("template")/config/img/1.png" height="45" />
+                                <img src="../@Url.Content("template")/config/img/1.png" height="45" />
                             </a>
                             <a class="marca" target="_self" href="marcas120a.html?cat=compotas&amp;m=141&amp;t=1">
-                                <img src="@Url.Content("template")/config/img/2.jpg" height="45" />
+                                <img src="../@Url.Content("template")/config/img/2.jpg" height="45" />
                             </a>
                             <a class="marca" target="_self" href="marcas120a.html?cat=compotas&amp;m=141&amp;t=1">
-                                <img src="@Url.Content("template")/config/img/3.png" height="45" />
+                                <img src="../@Url.Content("template")/config/img/3.png" height="45" />
                             </a>
                             <a class="marca" target="_self" href="marcas120a.html?cat=compotas&amp;m=141&amp;t=1">
-                                <img src="@Url.Content("template")/config/img/4.png" height="45" />
+                                <img src="../@Url.Content("template")/config/img/4.png" height="45" />
                             </a>
                             <a class="marca" target="_self" href="marcas120a.html?cat=compotas&amp;m=141&amp;t=1">
-                                <img src="@Url.Content("template")/config/img/5.png" height="45" />
+                                <img src="../@Url.Content("template")/config/img/5.png" height="45" />
                             </a>
                             <a class="marca" target="_self" href="marcas120a.html?cat=compotas&amp;m=141&amp;t=1">
-                                <img src="@Url.Content("template")/config/img/6.jpg" height="45" />
+                                <img src="../@Url.Content("template")/config/img/6.jpg" height="45" />
                             </a>
                             <a class="marca" target="_self" href="marcas120a.html?cat=compotas&amp;m=141&amp;t=1">
-                                <img src="@Url.Content("template")/config/img/7.jpg" height="45" />
+                                <img src="../@Url.Content("template")/config/img/7.jpg" height="45" />
                             </a>
                             <a class="marca" target="_self" href="marcas120a.html?cat=compotas&amp;m=141&amp;t=1">
-                                <img src="@Url.Content("template")/config/img/8.png" height="45" />
+                                <img src="../@Url.Content("template")/config/img/8.png" height="45" />
                             </a>
                             <a class="marca" target="_self" href="marcas120a.html?cat=compotas&amp;m=141&amp;t=1">
-                                <img src="@Url.Content("template")/config/img/9.jpg" height="45" />
+                                <img src="../@Url.Content("template")/config/img/9.jpg" height="45" />
                             </a>
                             <a class="marca" target="_self" href="marcas120a.html?cat=compotas&amp;m=141&amp;t=1">
-                                <img src="@Url.Content("template")/config/img/10.gif" height="45" />
+                                <img src="../@Url.Content("template")/config/img/10.gif" height="45" />
                             </a>
                         </div>
                         <div class="gm" style="float: left;">
                             <a class="marca" target="_self" href="marcas120a.html?cat=compotas&amp;m=141&amp;t=1">
-                                <img src="@Url.Content("template")/config/img/1.png" height="45" />
+                                <img src="../@Url.Content("template")/config/img/1.png" height="45" />
                             </a>
                             <a class="marca" target="_self" href="marcas120a.html?cat=compotas&amp;m=141&amp;t=1">
-                                <img src="@Url.Content("template")/config/img/2.jpg" height="45" />
+                                <img src="../@Url.Content("template")/config/img/2.jpg" height="45" />
                             </a>
                             <a class="marca" target="_self" href="marcas120a.html?cat=compotas&amp;m=141&amp;t=1">
-                                <img src="@Url.Content("template")/config/img/3.png" height="45" />
+                                <img src="../@Url.Content("template")/config/img/3.png" height="45" />
                             </a>
                             <a class="marca" target="_self" href="marcas120a.html?cat=compotas&amp;m=141&amp;t=1">
-                                <img src="@Url.Content("template")/config/img/4.png" height="45" />
+                                <img src="../@Url.Content("template")/config/img/4.png" height="45" />
                             </a>
                             <a class="marca" target="_self" href="marcas120a.html?cat=compotas&amp;m=141&amp;t=1">
-                                <img src="@Url.Content("template")/config/img/5.png" height="45" />
+                                <img src="../@Url.Content("template")/config/img/5.png" height="45" />
                             </a>
                             <a class="marca" target="_self" href="marcas120a.html?cat=compotas&amp;m=141&amp;t=1">
-                                <img src="@Url.Content("template")/config/img/6.jpg" height="45" />
+                                <img src="../@Url.Content("template")/config/img/6.jpg" height="45" />
                             </a>
                             <a class="marca" target="_self" href="marcas120a.html?cat=compotas&amp;m=141&amp;t=1">
-                                <img src="@Url.Content("template")/config/img/7.jpg" height="45" />
+                                <img src="../@Url.Content("template")/config/img/7.jpg" height="45" />
                             </a>
                             <a class="marca" target="_self" href="marcas120a.html?cat=compotas&amp;m=141&amp;t=1">
-                                <img src="@Url.Content("template")/config/img/8.png" height="45" />
+                                <img src="../@Url.Content("template")/config/img/8.png" height="45" />
                             </a>
                             <a class="marca" target="_self" href="marcas120a.html?cat=compotas&amp;m=141&amp;t=1">
-                                <img src="@Url.Content("template")/config/img/9.jpg" height="45" />
+                                <img src="../@Url.Content("template")/config/img/9.jpg" height="45" />
                             </a>
                             <a class="marca" target="_self" href="marcas120a.html?cat=compotas&amp;m=141&amp;t=1">
-                                <img src="@Url.Content("template")/config/img/10.gif" height="45" />
+                                <img src="../@Url.Content("template")/config/img/10.gif" height="45" />
                             </a>
                         </div>
                     </div>
@@ -173,14 +172,14 @@
 </div>
 <div class="pie">
     <div class="logo">
-        <img src="@Url.Content("template")/images/dautikomerc.png" width="190" style="margin-left:-45px;" />
+        <img src="../@Url.Content("template")/images/dautikomerc.png" width="190" style="margin-left:-45px;" />
     </div>
     &copy; Copyright 2014, All Rights Reserved.<br />
     Developed by Enes Demiri
 </div>
 
 @section scripts{
-<script>
+<script type="text/javascript">
     sla = 100;
     sls = 0;
     function slide(det) {

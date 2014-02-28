@@ -3,15 +3,10 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" type="text/css" href="template/iv-admin/css/prettyPhoto.css">
-    <link rel="stylesheet" type="text/css" href="template/css/fonts.css">
     <link href='http://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="template/css/style.css">
-    <script type="text/javascript" language="javascript" src="template/iv-admin/js/jquery-1.6.1.min.js"></script>
-    <script type="text/javascript" src="template/iv-admin/js/jquery.prettyPhoto.js"></script>
-    <script type="text/javascript" src="template/js/functions.js"></script>
-    <script>$(function () { $("a[rel^='prettyPhoto']").prettyPhoto({ social_tools: '' }); });</script>
-    @RenderSection("Scripts",false)
+    
+    @Styles.Render("~/Content/css")
+    
     <title>@ViewBag.Title</title>
 </head>
 <body>
@@ -37,17 +32,17 @@
             </form>
             <div class="redes">
                 <a target="_blank" href="https://www.facebook.com/ColombinaOficial" class="fb">
-                    <img src="@Url.Content("template")/images/youtube.png" width="27" heith="27" />
+                    <img src="~/template/images/youtube.png" width="27" heith="27" />
                 </a>
                 <a target="_blank" href="http://www.youtube.com/user/colombinaoficial" class="tw">
-                    <img src="@Url.Content("template")/images/facebook.png" width="27" heith="27" />
+                    <img src="~/template/images/facebook.png" width="27" heith="27" />
                 </a>
             </div>
         </div>
     </div>
     <div class="menu">
         <div class="logo" onclick="document.location.href = 'index.html';">
-            <img src="@Url.Content("template")/images/logo.png" width="140" />
+            <img src="~/template/images/logo.png" width="140" />
         </div>
 
         <a class="o s" target="_self" href="index14d1.html?cat=pagina_inicial" menu="77">Ballina</a>
@@ -109,5 +104,8 @@
     <div>
         @RenderBody()
     </div>
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("Scripts", required:false)
+    <script>$(function () { $("a[rel^='prettyPhoto']").prettyPhoto({ social_tools: '' }); });</script>
 </body>
 </html>

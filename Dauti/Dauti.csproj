@@ -39,11 +39,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.0.2\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -116,6 +123,30 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="DataModel\DautiModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DautiModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\DautiModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DautiModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\DautiModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DautiModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Product.cs">
+      <DependentUpon>DautiModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\ProductCategory.cs">
+      <DependentUpon>DautiModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\sysdiagram.cs">
+      <DependentUpon>DautiModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -130,6 +161,23 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <EntityDeploy Include="DataModel\DautiModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DautiModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="DataModel\DautiModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DautiModel.edmx</DependentUpon>
+      <LastGenOutput>DautiModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DataModel\DautiModel.edmx.diagram">
+      <DependentUpon>DautiModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="DataModel\DautiModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DautiModel.edmx</DependentUpon>
+      <LastGenOutput>DautiModel.cs</LastGenOutput>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -304,8 +352,11 @@
     <Content Include="template\css\font\OpenSans-CondLightItalic-webfont.ttf" />
     <Content Include="template\css\font\OpenSans-CondLightItalic-webfont.woff" />
     <Content Include="template\css\font\OpenSans-CondLightItalic-webfontd41d.eot" />
+    <Content Include="Views\Home\Test.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />

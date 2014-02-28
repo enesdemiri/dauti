@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dauti.DataModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,9 +9,11 @@ namespace Dauti.Controllers
 {
     public class HomeController : Controller
     {
+        private dbEntities db = new dbEntities();
+
         public ActionResult Index()
         {
-            return View();
+            return View(db.ProductCategories.ToList());
         }
 
         public ActionResult About()
@@ -24,6 +27,11 @@ namespace Dauti.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
+            return View();
+        }
+
+        public ActionResult Test()
+        {
             return View();
         }
     }
